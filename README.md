@@ -1,6 +1,6 @@
 # 🐍 ELT572 — Linguagens de Programação para Inteligência Artificial
 
-Repositório destinado às atividades desenvolvidas durante a disciplina **ELT562**, ofertada pela **Universidade Federal de Viçosa (UFV)**.  
+Repositório destinado às atividades desenvolvidas durante a disciplina **ELT572**, ofertada pela **Universidade Federal de Viçosa (UFV)**.  
 O foco da disciplina é introduzir os fundamentos da linguagem **Python**, desde a lógica básica até conceitos de **análise de dados** e **programação orientada a objetos**, seguindo o material da apostila **"Apostila de Python" – Sabrina de A. Silveira (UFV, 2025)**.
 
 ---
@@ -26,11 +26,11 @@ ELT572/
 ```
 
 🔗 **Acesse diretamente:**
-- 📂 [AtividadeAberta](https://github.com/marcosoliveira-dev/ELT562/tree/main/AtividadeAberta)
+- 📂 [AtividadeAberta](https://github.com/marcosoliveira-dev/ELT572/tree/main/AtividadeAberta)
 
-- 🧾 [AtividadeAvaliativa](https://github.com/marcosoliveira-dev/ELT562/tree/main/AtividadeAvaliativa)
+- 🧾 [AtividadeAvaliativa](https://github.com/marcosoliveira-dev/ELT572/tree/main/AtividadeAvaliativa)
 
-- 🧮 [ExercicioApostila](https://github.com/marcosoliveira-dev/ELT562/tree/main/ExercicioApostila)
+- 🧮 [ExercicioApostila](https://github.com/marcosoliveira-dev/ELT572/tree/main/ExercicioApostila)
 
 
 
@@ -99,10 +99,10 @@ Cada diretório contém scripts desenvolvidos ao longo da disciplina, com foco e
 ## 📘 Referência Principal
 
 > **Silveira, Sabrina de A. (2025). _Apostila de Python_. Universidade Federal de Viçosa.**  
-> Material-base da disciplina ELT562, cobrindo desde os fundamentos até análise de dados em Python.
+> Material-base da disciplina ELT572, cobrindo desde os fundamentos até análise de dados em Python.
 
 ---
 ## 📎 Licença
 
-Este repositório tem finalidade **acadêmica e educacional**.  
+Este repositório tem finalidade **acadêmica**.  
 Todos os códigos aqui disponibilizados foram desenvolvidos como parte das atividades da disciplina **ELT572 – UFV**.
