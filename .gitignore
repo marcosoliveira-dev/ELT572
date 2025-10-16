@@ -1,0 +1,47 @@
+# ==============================
+# IGNORAR DIRETÓRIOS JUPYTER
+# ==============================
+**/.ipynb_checkpoints/
+
+# ==============================
+# PYTHON / COMPILAÇÃO
+# ==============================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pdb
+*.egg-info/
+*.egg
+build/
+dist/
+*.spec
+
+# ==============================
+# AMBIENTES VIRTUAIS
+# ==============================
+.env
+.venv/
+env/
+venv/
+ENV/
+Pipfile.lock
+poetry.lock
+
+# ==============================
+# ARQUIVOS TEMPORÁRIOS DE SISTEMA E EDITOR
+# ==============================
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.log
+*.tmp
+~$*
+
+# ==============================
+# BACKUPS E TESTES
+# ==============================
+*.bak
+*.swp
+test_*.py
