@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Capitulo02_ComandosBasicos</title>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github.min.css" rel="stylesheet"/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+<script>hljs.highlightAll();</script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script async="" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+<style>
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #ffffff;
+  color: #222;
+  max-width: 960px;
+  margin: auto;
+  padding: 2rem;
+  line-height: 1.6;
+}
+h1, h2, h3 {
+  color: #0366d6;
+}
+pre code {
+  display: block;
+  padding: 1rem;
+  border-radius: 8px;
+  background: #f6f8fa;
+  font-size: 0.95rem;
+  overflow-x: auto;
+}
+.jp-OutputArea-output {
+  background: #fafafa;
+  border-left: 4px solid #0366d6;
+  margin: 0.5rem 0;
+  padding: 0.75rem;
+}
+img {
+  max-width: 100%;
+}
+.error {
+  color: red;
+  white-space: pre-wrap;
+}
+</style>
+</head>
+<body>
+<h1>Capitulo02_ComandosBasicos</h1>
+<div class="jp-MarkdownCell"><h1 id="Exerc%C3%ADcios-Capitulo-02---Comandos-b%C3%A1sicos-da-linguagem-Python">Exercícios Capitulo 02 - Comandos básicos da linguagem Python<a class="anchor-link" href="#Exerc%C3%ADcios-Capitulo-02---Comandos-b%C3%A1sicos-da-linguagem-Python">¶</a></h1><p style="text-align:right;">Aluno: Marcos Alves Oliveira</p>
+</div>
+<div class="jp-MarkdownCell"><p>Exercicio 01</p>
+</div>
+<div class="jp-Cell jp-CodeCell">
+<pre><code class="language-python"># Programa: Impressão de números de 1 a 20
+# Exibir os números de 1 a 20 primeiro um abaixo do outro
+# e depois um ao lado do outro.
+
+# Parte 1 - Um abaixo do outro
+print("Números de 1 a 20 (um abaixo do outro):")
+for i in range(1, 21):
+    print(i)
+
+# Linha em branco para separar as duas partes
+print("\nNúmeros de 1 a 20 (um ao lado do outro):")
+
+# Parte 2 - Um ao lado do outro
+for i in range(1, 21):
+    print(i, end=" ")
+
+print()  # quebra de linha final
+</code></pre>
+<div class="jp-Cell-outputWrapper">
+<pre class="jp-OutputArea-output">Números de 1 a 20 (um abaixo do outro):
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+
+Números de 1 a 20 (um ao lado do outro):
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 
+</pre>
+</div>
+</div>
+<div class="jp-MarkdownCell"><p>Exercicio 02</p>
+</div>
+<div class="jp-Cell jp-CodeCell">
+<pre><code class="language-python"># Programa: Vetor de 10 números reais em ordem inversa
+# Ler 10 números reais e exibi-los na ordem inversa da leitura
+
+# Criação de uma lista vazia
+numeros = []
+
+# Leitura dos 10 números reais
+for i in range(10):
+    valor = float(input(f"Digite o {i+1}º número: "))
+    numeros.append(valor)
+
+# Exibição dos números na ordem inversa
+print("\nNúmeros na ordem inversa:")
+for i in range(9, -1, -1):
+    print(numeros[i])
+</code></pre>
+<div class="jp-Cell-outputWrapper">
+<pre class="jp-OutputArea-output">Digite o 1º número:  10
+Digite o 2º número:  20
+Digite o 3º número:  30
+Digite o 4º número:  40
+Digite o 5º número:  50
+Digite o 6º número:  60
+Digite o 7º número:  70
+Digite o 8º número:  80
+Digite o 9º número:  90
+Digite o 10º número:  100
+</pre>
+<pre class="jp-OutputArea-output">
+Números na ordem inversa:
+100.0
+90.0
+80.0
+70.0
+60.0
+50.0
+40.0
+30.0
+20.0
+10.0
+</pre>
+</div>
+</div>
+<div class="jp-MarkdownCell"><p>Exercicio 03</p>
+</div>
+<div class="jp-Cell jp-CodeCell">
+<pre><code class="language-python"># Programa: Contar consoantes em uma lista
+# Ler 10 caracteres e identificar quantas e quais são consoantes
+
+# Criação da lista vazia
+caracteres = []
+
+# Leitura dos 10 caracteres
+for i in range(10):
+    letra = input(f"Digite o {i+1}º caractere: ").lower()  # converte para minúsculo
+    caracteres.append(letra)
+
+# Lista 
+consoantes = []
+
+# Verificação de consoantes
+for letra in caracteres:
+    if letra.isalpha() and letra not in ['a', 'e', 'i', 'o', 'u']:
+        consoantes.append(letra)
+
+# Exibição dos resultados
+print(f"\nForam lidas {len(consoantes)} consoantes.")
+print("Consoantes:", consoantes)
+</code></pre>
+<div class="jp-Cell-outputWrapper">
+<pre class="jp-OutputArea-output">Digite o 1º caractere:  a
+Digite o 2º caractere:  b
+Digite o 3º caractere:  c
+Digite o 4º caractere:  d
+Digite o 5º caractere:  e
+Digite o 6º caractere:  f
+Digite o 7º caractere:  g
+Digite o 8º caractere:  h
+Digite o 9º caractere:  i
+Digite o 10º caractere:  j
+</pre>
+<pre class="jp-OutputArea-output">
+Foram lidas 7 consoantes.
+Consoantes: ['b', 'c', 'd', 'f', 'g', 'h', 'j']
+</pre>
+</div>
+</div>
+<div class="jp-MarkdownCell"><p>Exercicio 04</p>
+</div>
+<div class="jp-Cell jp-CodeCell">
+<pre><code class="language-python"># Programa: Contar maiores de idade
+# Ler a idade de 5 pessoas e informar quantas têm 18 anos ou mais
+
+# Inicializa o contador de maiores de idade
+maiores = 0
+
+# Loop para ler a idade de 5 pessoas
+for i in range(5):
+    idade = int(input(f"Digite a idade da {i+1}ª pessoa: "))
+    
+    # Verifica se a pessoa atingiu a maior idade (18 anos ou mais)
+    if idade &gt;= 18:
+        maiores += 1
+
+# Exibe o resultado
+print(f"\n{maiores} pessoa(s) atingiram a maior idade.")
+</code></pre>
+<div class="jp-Cell-outputWrapper">
+<pre class="jp-OutputArea-output">Digite a idade da 1ª pessoa:  10
+Digite a idade da 2ª pessoa:  80
+Digite a idade da 3ª pessoa:  10
+Digite a idade da 4ª pessoa:  15
+Digite a idade da 5ª pessoa:  16
+</pre>
+<pre class="jp-OutputArea-output">
+1 pessoa(s) atingiram a maior idade.
+</pre>
+</div>
+</div>
+<div class="jp-Cell jp-CodeCell">
+</div>
+</body>
+</html>
